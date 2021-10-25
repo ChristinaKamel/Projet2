@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Facturation/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Facturation/app/src/main/res/layout/element_ajouter_facture_produit.xml" value="0.25833333333333336" />
+        <entry key="..\:/Facturation/app/src/main/res/layout/element_client.xml" value="0.25833333333333336" />
+        <entry key="..\:/Facturation/app/src/main/res/layout/element_facture.xml" value="0.25833333333333336" />
+        <entry key="..\:/Facturation/app/src/main/res/layout/element_produit.xml" value="0.25833333333333336" />
+        <entry key="..\:/Facturation/app/src/main/res/layout/fragment_ajouter_client.xml" value="0.25833333333333336" />
+        <entry key="..\:/Facturation/app/src/main/res/layout/fragment_ajouter_facture.xml" value="0.25833333333333336" />
+        <entry key="..\:/Facturation/app/src/main/res/layout/fragment_ajouter_produit.xml" value="0.24427083333333333" />
+        <entry key="..\:/Facturation/app/src/main/res/layout/fragment_clients.xml" value="0.25833333333333336" />
+        <entry key="..\:/Facturation/app/src/main/res/layout/fragment_dashboard.xml" value="0.25833333333333336" />
+        <entry key="..\:/Facturation/app/src/main/res/layout/fragment_factures.xml" value="0.25833333333333336" />
+        <entry key="..\:/Facturation/app/src/main/res/layout/fragment_home.xml" value="0.25833333333333336" />
+        <entry key="..\:/Facturation/app/src/main/res/layout/fragment_notifications.xml" value="0.25833333333333336" />
+        <entry key="..\:/Facturation/app/src/main/res/layout/fragment_produits.xml" value="0.25833333333333336" />
+        <entry key="..\:/Facturation/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25833333333333336" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

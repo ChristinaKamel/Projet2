@@ -1,0 +1,606 @@
+[debug] [2021-10-25T08:08:02.319Z] ----------------------------------------------------------------------
+[debug] [2021-10-25T08:08:02.322Z] Command:       D:\Program Files HD\nodejs\node.exe C:\Users\chris\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2021-10-25T08:08:02.322Z] CLI Version:   9.20.0
+[debug] [2021-10-25T08:08:02.323Z] Platform:      win32
+[debug] [2021-10-25T08:08:02.323Z] Node Version:  v14.15.5
+[debug] [2021-10-25T08:08:02.324Z] Time:          Mon Oct 25 2021 11:08:02 GMT+0300 (Eastern European Summer Time)
+[debug] [2021-10-25T08:08:02.324Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-25T08:08:02.396Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-25T08:08:02.397Z] > authorizing via signed-in user (christinakamel1@gmail.com)
+[info] i  emulators: Starting emulators: auth, functions, firestore, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, storage"}}
+[debug] [2021-10-25T08:08:02.417Z] [hub] writing locator at C:\Users\chris\AppData\Local\Temp\hub-appfacturation-ef26c.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: database, hosting, pubsub {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mdatabase, hosting, pubsub\u001b[22m"}}
+[info] +  functions: Using node@14 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@14 from host."}}
+[debug] [2021-10-25T08:08:02.439Z] defaultcredentials: writing to file C:\Users\chris\AppData\Roaming\firebase\christinakamel1_gmail_com_application_default_credentials.json
+[debug] [2021-10-25T08:08:02.441Z] Setting GAC to C:\Users\chris\AppData\Roaming\firebase\christinakamel1_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\chris\\AppData\\Roaming\\firebase\\christinakamel1_gmail_com_application_default_credentials.json"}}
+[debug] [2021-10-25T08:08:02.447Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/appfacturation-ef26c/adminSdkConfig [none]
+[debug] [2021-10-25T08:08:03.075Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/appfacturation-ef26c/adminSdkConfig 200
+[debug] [2021-10-25T08:08:03.075Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/appfacturation-ef26c/adminSdkConfig {"projectId":"appfacturation-ef26c","storageBucket":"appfacturation-ef26c.appspot.com","locationId":"us-central"}
+[debug] [2021-10-25T08:08:03.158Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2021-10-25T08:08:03.159Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-10-25T08:08:03.160Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\chris\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.13.1.jar","--host","localhost","--port",8080,"--rules","D:\\Facturation\\firestore.rules","--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\chris\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.13.1.jar\",\"--host\",\"localhost\",\"--port\",8080,\"--rules\",\"D:\\\\Facturation\\\\firestore.rules\",\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2021-10-25T08:08:03.289Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:08:04.749Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:08:06.354Z] Oct 25, 2021 11:08:06 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://localhost:61371
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 25, 2021 11:08:06 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\r\nINFO: Started WebSocket server on ws://localhost:61371\r\n"}}
+[debug] [2021-10-25T08:08:06.560Z] API endpoint: http://localhost: {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://localhost:"}}
+[debug] [2021-10-25T08:08:06.561Z] 8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=localhost:8080
+
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\r\n\n   export FIRESTORE_EMULATOR_HOST=localhost:8080\n\nDev App Server is now running.\n\r\n"}}
+[debug] [2021-10-25T08:08:11.065Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:08:11.071Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2021-10-25T08:08:11.501Z] Temp file directory for storage emulator: C:\Users\chris\AppData\Local\Temp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: C:\\Users\\chris\\AppData\\Local\\Temp/firebase/storage/blobs"}}
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4001 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4001 instead."}}
+[debug] [2021-10-25T08:08:12.499Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-10-25T08:08:12.499Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2021-10-25T08:08:12.500Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\chris\\.cache\\firebase\\emulators\\ui-v1.6.3\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\chris\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.6.3\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2021-10-25T08:08:12.672Z] Web / API server started at localhost:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4001\n"}}
+[info] i  functions: Watching "D:\Facturation\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\Facturation\\functions\" for Cloud Functions..."}}
+[debug] [2021-10-25T08:08:12.789Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2021-10-25T08:08:12.790Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=1"}}
+[debug] [2021-10-25T08:08:12.790Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2021-10-25T08:08:12.792Z] [worker-~diagnostic~-1c8b4a23-b922-446d-ba54-5421b93cd02b]: Assigning socketPath: \\?\pipe\D:\Facturation\functions\39280 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-1c8b4a23-b922-446d-ba54-5421b93cd02b]: Assigning socketPath: \\\\?\\pipe\\D:\\Facturation\\functions\\39280"}}
+[debug] [2021-10-25T08:08:12.793Z] [worker-~diagnostic~-1c8b4a23-b922-446d-ba54-5421b93cd02b]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-1c8b4a23-b922-446d-ba54-5421b93cd02b]: BUSY"}}
+[debug] [2021-10-25T08:08:13.321Z] [runtime-status] [39280] Functions runtime initialized. {"cwd":"D:\\Facturation\\functions","node_version":"14.15.5"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [39280] Functions runtime initialized. {\"cwd\":\"D:\\\\Facturation\\\\functions\",\"node_version\":\"14.15.5\"}"}}
+[debug] [2021-10-25T08:08:13.324Z] [runtime-status] [39280] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [39280] Disabled runtime features: undefined"}}
+[debug] [2021-10-25T08:08:13.329Z] [runtime-status] [39280] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"D:\\Facturation\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [39280] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"D:\\\\Facturation\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2021-10-25T08:08:13.334Z] [runtime-status] [39280] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"D:\\Facturation\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [39280] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.15.7\",\"resolution\":\"D:\\\\Facturation\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2021-10-25T08:08:13.337Z] [runtime-status] [39280] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [39280] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2021-10-25T08:08:13.338Z] [runtime-status] [39280] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"D:\\Facturation\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [39280] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.15.7\",\"resolution\":\"D:\\\\Facturation\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2021-10-25T08:08:13.412Z] [runtime-status] [39280] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [39280] Checked functions.config() {\"config\":{}}"}}
+[debug] [2021-10-25T08:08:13.413Z] [runtime-status] [39280] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.15.7","resolution":"D:\\Facturation\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [39280] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.15.7\",\"resolution\":\"D:\\\\Facturation\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2021-10-25T08:08:13.414Z] [runtime-status] [39280] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"D:\\Facturation\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [39280] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.15.7\",\"resolution\":\"D:\\\\Facturation\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2021-10-25T08:08:13.416Z] [runtime-status] [39280] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"D:\\Facturation\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [39280] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"D:\\\\Facturation\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2021-10-25T08:08:13.417Z] [runtime-status] [39280] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"D:\\Facturation\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [39280] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.15.7\",\"resolution\":\"D:\\\\Facturation\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2021-10-25T08:08:13.418Z] [runtime-status] [39280] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.12.0","resolution":"D:\\Facturation\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [39280] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"D:\\\\Facturation\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4001                │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ localhost:9099 │ http://localhost:4001/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ localhost:5001 │ http://localhost:4001/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ localhost:8080 │ http://localhost:4001/firestore │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Storage        │ localhost:9199 │ http://localhost:4001/storage   │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2021-10-25T08:08:13.427Z] [worker-~diagnostic~-1c8b4a23-b922-446d-ba54-5421b93cd02b]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-1c8b4a23-b922-446d-ba54-5421b93cd02b]: IDLE"}}
+[debug] [2021-10-25T08:08:13.745Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:08:16.750Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:08:19.747Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:08:22.760Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:08:25.749Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:08:28.775Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:08:31.751Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:08:34.760Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:08:37.749Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:08:40.745Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:08:43.748Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:08:46.754Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:08:49.751Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:08:52.755Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:08:55.753Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:08:58.751Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:09:01.758Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:09:04.748Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:09:07.752Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:09:10.752Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:09:13.753Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:09:16.743Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:09:19.746Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:09:22.749Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:09:25.749Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:09:28.747Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:09:31.750Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:09:34.752Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:09:37.756Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:09:40.749Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:09:43.754Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:09:46.758Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:09:49.750Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:09:52.747Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:09:55.751Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:09:58.752Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:10:01.761Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:10:04.751Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:10:07.762Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:10:10.752Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:10:13.747Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:10:16.753Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:10:19.749Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:10:22.758Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:10:25.761Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:10:28.758Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:10:31.751Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:10:34.745Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:10:37.751Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:10:40.758Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:10:43.760Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:10:46.755Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:10:49.759Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:10:52.750Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:10:55.746Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:10:58.755Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:11:01.758Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:11:04.764Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:11:07.751Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:11:10.800Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:11:13.082Z] Oct 25, 2021 11:11:13 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 25, 2021 11:11:13 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2021-10-25T08:11:13.143Z] Oct 25, 2021 11:11:13 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 25, 2021 11:11:13 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2021-10-25T08:11:13.359Z] Oct 25, 2021 11:11:13 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 25, 2021 11:11:13 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected HTTP/2 connection.\r\n"}}
+[debug] [2021-10-25T08:11:13.613Z] Oct 25, 2021 11:11:13 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 25, 2021 11:11:13 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\r\nINFO: Connected to new websocket client\r\n"}}
+[debug] [2021-10-25T08:11:13.754Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:11:15.298Z] Oct 25, 2021 11:11:15 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 25, 2021 11:11:15 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2021-10-25T08:11:16.749Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:11:17.360Z] Oct 25, 2021 11:11:17 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 25, 2021 11:11:17 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2021-10-25T08:11:19.405Z] Oct 25, 2021 11:11:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 25, 2021 11:11:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2021-10-25T08:11:19.747Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:11:21.452Z] Oct 25, 2021 11:11:21 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 25, 2021 11:11:21 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2021-10-25T08:11:22.756Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:11:23.510Z] Oct 25, 2021 11:11:23 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 25, 2021 11:11:23 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2021-10-25T08:11:25.555Z] Oct 25, 2021 11:11:25 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 25, 2021 11:11:25 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2021-10-25T08:11:25.749Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:11:27.601Z] Oct 25, 2021 11:11:27 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 25, 2021 11:11:27 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2021-10-25T08:11:28.753Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:11:31.758Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:11:34.753Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:11:37.753Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:11:40.756Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:11:43.745Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:11:46.747Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:11:49.758Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:11:52.747Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:11:55.747Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:11:58.759Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:12:01.749Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:12:04.756Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:12:07.751Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:12:10.760Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:12:13.755Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:12:16.757Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:12:19.759Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:12:22.751Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:12:25.750Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:12:28.758Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:12:31.758Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:12:34.750Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:12:37.747Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:12:40.747Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:12:43.753Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:12:46.759Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:12:49.748Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:12:52.758Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:12:55.745Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:12:58.745Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:13:01.754Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:13:04.750Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:13:07.747Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:13:10.753Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:13:13.746Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:13:16.754Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:13:19.742Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:13:22.755Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:13:25.746Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:13:28.759Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:13:31.753Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:13:34.761Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:13:37.750Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:13:40.759Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:13:43.758Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:13:46.759Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:13:49.746Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:13:52.749Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:13:55.747Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:13:58.758Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:14:01.758Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:14:04.760Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:14:07.757Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:14:10.753Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:14:13.761Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:14:16.748Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:14:19.746Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:14:22.746Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:14:25.753Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:14:28.747Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:14:31.745Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:14:34.753Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:14:37.754Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:14:40.755Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:14:43.760Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:14:46.741Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:14:49.751Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:14:52.744Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:14:55.753Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:14:58.744Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:15:01.744Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:15:04.755Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:15:07.756Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:15:10.757Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:15:13.746Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:15:16.756Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:15:19.745Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:15:22.748Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:15:25.754Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:15:28.756Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:15:31.747Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:15:34.749Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:15:37.750Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:15:40.748Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:15:43.753Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:15:46.748Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:15:49.751Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:15:52.759Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:15:55.762Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:15:58.756Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:16:01.752Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:16:04.746Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:16:07.755Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:16:10.748Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:16:13.756Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:16:16.747Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:16:19.746Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:16:22.747Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:16:25.747Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:16:28.749Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:16:31.748Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:16:34.754Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:38:01.758Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:38:04.317Z] Oct 25, 2021 11:38:04 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 25, 2021 11:38:04 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\r\nINFO: Websocket client disconnected\r\n"}}
+[debug] [2021-10-25T08:52:58.724Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:52:58.727Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:52:58.728Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:52:58.729Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:52:58.738Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:52:59.016Z] Oct 25, 2021 11:52:59 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 25, 2021 11:52:59 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\r\nINFO: Connected to new websocket client\r\n"}}
+[debug] [2021-10-25T08:53:01.732Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:53:02.278Z] Oct 25, 2021 11:53:02 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 25, 2021 11:53:02 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2021-10-25T08:53:02.286Z] Oct 25, 2021 11:53:02 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 25, 2021 11:53:02 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2021-10-25T08:53:04.727Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:53:05.068Z] Oct 25, 2021 11:53:05 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 25, 2021 11:53:05 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2021-10-25T08:53:07.720Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:53:10.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:53:13.737Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:53:16.722Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:53:19.728Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:53:22.733Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:53:25.734Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:53:28.726Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:53:31.730Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:53:34.728Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:53:37.725Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:53:40.731Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:53:43.728Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:53:46.733Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:53:49.732Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:53:52.730Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:53:55.733Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:53:58.728Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:54:01.724Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:54:04.734Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:54:07.737Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:54:10.727Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:54:13.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:54:16.730Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:54:19.737Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:54:22.740Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:54:25.724Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:54:28.729Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:54:31.767Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:54:34.734Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:54:37.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:54:40.729Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:54:43.738Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:54:46.737Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:54:49.728Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:54:52.731Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:54:55.739Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:54:58.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:55:01.730Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:55:04.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:55:07.726Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:55:10.732Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:55:13.729Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:55:16.731Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:55:19.727Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:55:22.733Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:55:25.740Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:55:28.727Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:55:31.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:55:34.738Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:55:37.734Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:55:40.737Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:55:43.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:55:46.727Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:55:49.734Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:55:52.741Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:55:55.733Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:55:58.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:56:01.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:56:04.730Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:56:07.729Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:56:10.730Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:56:13.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:56:16.729Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:56:19.737Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:56:22.737Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:56:25.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:56:28.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:56:31.737Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:56:34.727Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:56:37.741Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:56:40.728Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:56:43.740Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:56:46.740Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:56:49.734Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:56:52.760Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:56:55.737Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:56:58.729Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:57:01.727Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:57:04.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:57:07.747Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:57:10.740Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:57:13.729Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:57:16.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:57:19.726Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:57:22.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:57:25.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:57:28.726Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:57:31.727Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:57:34.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:57:37.739Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:57:40.741Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:57:43.727Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:57:46.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:57:49.724Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:57:52.729Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:57:55.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:57:58.734Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:58:01.731Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:58:04.732Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:58:07.734Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:58:10.739Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:58:13.731Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:58:16.734Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:58:19.740Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:58:22.732Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:58:25.729Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:58:28.725Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:58:31.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:58:34.732Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:58:37.739Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:58:40.724Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:58:43.747Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:58:46.733Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:58:49.738Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:58:52.725Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:58:55.733Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:58:58.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:59:01.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:59:04.749Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:59:07.739Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:59:10.724Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:59:13.737Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:59:16.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:59:19.739Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:59:22.731Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:59:25.733Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:59:28.728Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:59:31.731Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:59:34.742Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:59:37.746Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:59:40.727Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:59:43.741Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:59:46.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:59:49.727Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:59:52.740Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:59:55.770Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T08:59:58.727Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:00:01.741Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:00:04.743Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:00:07.729Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:00:10.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:00:13.738Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:00:16.734Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:00:19.733Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:00:22.737Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:00:25.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:00:28.728Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:00:31.731Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:00:34.727Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:00:37.733Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:00:40.732Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:00:43.732Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:00:46.730Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:00:49.731Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:00:52.732Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:00:55.745Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:00:58.726Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:01:01.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:01:04.730Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:01:07.733Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:01:10.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:01:13.733Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:01:16.739Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:01:19.734Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:01:22.741Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:01:25.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:01:28.729Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:01:31.755Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:01:34.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:01:37.740Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:01:40.739Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:01:43.727Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:01:46.740Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:01:49.725Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:01:52.733Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:01:55.721Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:01:58.734Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:02:01.731Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:02:04.740Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:02:07.734Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:02:10.732Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:02:13.727Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:02:16.737Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:02:19.741Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:02:22.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:02:25.741Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:02:28.730Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:02:31.732Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:02:34.739Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:02:37.747Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:02:40.728Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:02:43.731Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:02:46.739Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:02:49.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:02:52.738Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:02:55.730Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:02:58.734Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:03:01.724Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:03:04.737Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:03:07.737Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:03:10.734Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:03:13.728Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:03:16.738Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:03:19.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:03:22.726Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:03:25.731Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:03:28.740Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:03:31.727Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:03:34.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:03:37.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:03:40.734Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:03:43.734Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:03:46.729Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:03:49.726Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:03:52.729Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:03:55.732Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:03:58.733Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:04:01.740Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:04:04.733Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:04:07.739Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:04:10.726Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:04:13.741Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:04:16.739Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:04:19.738Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:04:22.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:04:25.727Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:04:28.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:04:31.729Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:04:34.737Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:04:37.742Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:04:40.734Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:04:43.737Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:04:46.738Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:04:49.739Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:04:52.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:04:55.740Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:04:58.733Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:05:01.729Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:05:04.734Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:05:07.728Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:05:10.723Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:05:13.740Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:05:16.730Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:05:19.733Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:05:22.737Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:05:25.730Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:05:28.729Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:05:31.738Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:05:34.732Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:05:37.738Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:05:40.740Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:05:43.734Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:05:46.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:05:49.740Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:05:52.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:05:55.726Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:05:58.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:06:01.740Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:06:04.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:06:07.741Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:06:10.742Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:06:13.727Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:06:16.729Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:06:19.739Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:06:22.734Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:06:25.729Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:06:28.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:06:31.731Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:06:34.729Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:06:37.741Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:06:40.728Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:06:43.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:06:46.729Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:06:49.727Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:06:52.736Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:06:55.737Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:06:58.738Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:07:01.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:07:04.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:07:07.742Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:07:10.740Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:07:13.741Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:07:16.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:07:19.730Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:07:22.730Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:07:25.727Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:07:28.738Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:07:31.735Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:07:34.741Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:07:37.738Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:17:04.732Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:17:07.738Z] Functions emulator received unknown request at path /api/v0/swarm/peers
+[debug] [2021-10-25T09:17:10.738Z] Functions emulator received unknown request at path /api/v0/swarm/peers

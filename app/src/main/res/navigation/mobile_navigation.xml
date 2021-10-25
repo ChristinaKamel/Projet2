@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_factures">
+
+    <fragment
+        android:id="@+id/navigation_factures"
+        android:name="com.app.facturation.ui.FacturesFragment"
+        android:label="@string/titre_factures"
+        tools:layout="@layout/fragment_factures" >
+        <action
+            android:id="@+id/action_navigation_factures_to_ajouterFactureFragment"
+            app:destination="@id/ajouterFactureFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_clients"
+        android:name="com.app.facturation.ui.ClientsFragment"
+        android:label="@string/titre_clients"
+        tools:layout="@layout/fragment_clients" >
+        <action
+            android:id="@+id/action_navigation_clients_to_ajouterClientFragment"
+            app:destination="@id/ajouterClientFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_produits"
+        android:name="com.app.facturation.ui.ProduitsFragment"
+        android:label="@string/titre_produits"
+        tools:layout="@layout/fragment_produits" >
+        <action
+            android:id="@+id/action_navigation_produits_to_ajouterProduitFragment"
+            app:destination="@id/ajouterProduitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ajouterFactureFragment"
+        android:name="com.app.facturation.ui.AjouterFactureFragment"
+        android:label="@string/titre_ajouter_facture"
+        tools:layout="@layout/fragment_ajouter_facture" />
+    <fragment
+        android:id="@+id/ajouterClientFragment"
+        android:name="com.app.facturation.ui.AjouterClientFragment"
+        android:label="@string/titre_ajouter_client"
+        tools:layout="@layout/fragment_ajouter_client" />
+    <fragment
+        android:id="@+id/ajouterProduitFragment"
+        android:name="com.app.facturation.ui.AjouterProduitFragment"
+        android:label="@string/titre_ajouter_produit"
+        tools:layout="@layout/fragment_ajouter_produit" />
+</navigation>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "748604938501",
+    "project_id": "appfacturation-ef26c",
+    "storage_bucket": "appfacturation-ef26c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748604938501:android:e72367f8aa59ab79f47f6c",
+        "android_client_info": {
+          "package_name": "com.app.facturation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748604938501-p2gkotmuq6d422lrhpas0su6g8padb2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_fC-MVoRvJBBPgeURzD5HbdYLzervFbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748604938501-p2gkotmuq6d422lrhpas0su6g8padb2b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

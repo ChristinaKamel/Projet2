@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Facturation</string>
+    <!-- titres: -->
+    <string name="titre_factures">Factures</string>
+    <string name="titre_clients">Clients</string>
+    <string name="titre_produits">Produits</string>
+    <string name="titre_ajouter_facture">Ajouter facture</string>
+    <string name="titre_ajouter_client">Ajouter client</string>
+    <string name="titre_ajouter_produit">Ajouter produit</string>
+
+    <!-- Ajouter client: -->
+    <string name="label_nom_client">Nom client</string>
+    <string name="label_email">Email</string>
+    <string name="label_telephone">Telephone</string>
+    <string name="label_adresse">Adresse</string>
+
+    <!-- Ajouter produit -->
+    <string name="label_nom_produit">Nom produit</string>
+    <string name="label_prix_unitaire">Prix unitaire</string>
+    <string name="label_description_produit">Description</string>
+
+    <!-- Ajouter facture -->
+    <string name="label_date_echeance">Date d\'échéance</string>
+    <string name="label_client">Client</string>
+    <string name="label_produit">Produit</string>
+    <string name="label_quantite">Qte</string>
+    <string name="label_notes">Notes</string>
+    <string name="label_total">Total:</string>
+
+
+</resources>
