@@ -26,6 +26,8 @@
     <string name="label_quantite">Qte</string>
     <string name="label_notes">Notes</string>
     <string name="label_total">Total:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

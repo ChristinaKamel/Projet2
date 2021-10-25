@@ -1,13 +1,16 @@
 package com.app.facturation.model;
 
-public class Client {
+import java.io.Serializable;
+
+public class Client implements Serializable {
 
     private String nomClient;
     private String telephone;
     private String email;
     private String adresse;
 
-    public Client() {}
+    public Client() {
+    }
 
     public Client(String nomClient, String telephone, String email, String adresse) {
         this.nomClient = nomClient;

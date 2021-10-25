@@ -1,14 +1,17 @@
 package com.app.facturation.model;
 
-public class Produit {
+import java.io.Serializable;
+
+public class Produit implements Serializable {
 
     private String nomProduit;
-    private float prixUnitaire;
+    private int prixUnitaire;
     private String descriptionProduit;
 
-    public Produit() {}
+    public Produit() {
+    }
 
-    public Produit(String nomProduit, float prixUnitaire, String descriptionProduit) {
+    public Produit(String nomProduit, int prixUnitaire, String descriptionProduit) {
         this.nomProduit = nomProduit;
         this.prixUnitaire = prixUnitaire;
         this.descriptionProduit = descriptionProduit;
@@ -22,11 +25,11 @@ public class Produit {
         this.nomProduit = nomProduit;
     }
 
-    public float getPrixUnitaire() {
+    public int getPrixUnitaire() {
         return prixUnitaire;
     }
 
-    public void setPrixUnitaire(float prixUnitaire) {
+    public void setPrixUnitaire(int prixUnitaire) {
         this.prixUnitaire = prixUnitaire;
     }
 

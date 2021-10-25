@@ -4,13 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Facturation/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Facturation/app/src/main/res/layout/element_ajouter_facture_produit.xml" value="0.25833333333333336" />
+        <entry key="..\:/Facturation/app/src/main/res/layout/element_ajouter_facture_produit.xml" value="0.24798387096774194" />
         <entry key="..\:/Facturation/app/src/main/res/layout/element_client.xml" value="0.25833333333333336" />
         <entry key="..\:/Facturation/app/src/main/res/layout/element_facture.xml" value="0.25833333333333336" />
         <entry key="..\:/Facturation/app/src/main/res/layout/element_produit.xml" value="0.25833333333333336" />
         <entry key="..\:/Facturation/app/src/main/res/layout/fragment_ajouter_client.xml" value="0.25833333333333336" />
         <entry key="..\:/Facturation/app/src/main/res/layout/fragment_ajouter_facture.xml" value="0.25833333333333336" />
         <entry key="..\:/Facturation/app/src/main/res/layout/fragment_ajouter_produit.xml" value="0.24427083333333333" />
+        <entry key="..\:/Facturation/app/src/main/res/layout/fragment_choisir_client.xml" value="0.25833333333333336" />
+        <entry key="..\:/Facturation/app/src/main/res/layout/fragment_choisir_produit.xml" value="0.25833333333333336" />
         <entry key="..\:/Facturation/app/src/main/res/layout/fragment_clients.xml" value="0.25833333333333336" />
         <entry key="..\:/Facturation/app/src/main/res/layout/fragment_dashboard.xml" value="0.25833333333333336" />
         <entry key="..\:/Facturation/app/src/main/res/layout/fragment_factures.xml" value="0.25833333333333336" />

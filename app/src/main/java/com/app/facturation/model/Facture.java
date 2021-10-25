@@ -1,20 +1,25 @@
 package com.app.facturation.model;
 
-import java.util.HashMap;
-import java.util.Map;
+import com.app.facturation.utils.MonPair;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Facture {
 
+    private String idFacture;
     private Client client;
     //Produit => Quantite
-    private Map<Produit, Integer> produits;
+    private List<MonPair<Produit, Quantite>> produits;
     private long timestampCreation;
     private String dateEcheance;
     private String notes;
 
-    public Facture() {}
+    public Facture() {
+    }
 
-    public Facture(Client client, Map<Produit, Integer> produits, long timestampCreation, String dateEcheance, String notes) {
+    public Facture(String idFacture, Client client, List<MonPair<Produit, Quantite>> produits, long timestampCreation, String dateEcheance, String notes) {
+        this.idFacture = idFacture;
         this.client = client;
         this.produits = produits;
         this.timestampCreation = timestampCreation;
@@ -22,8 +27,39 @@ public class Facture {
         this.notes = notes;
     }
 
+    public Facture(Client client, List<MonPair<Produit, Quantite>> produits, long timestampCreation, String dateEcheance, String notes) {
+        this.client = client;
+        this.produits = produits;
+        this.timestampCreation = timestampCreation;
+        this.dateEcheance = dateEcheance;
+        this.notes = notes;
+        genererIdFacture();
+    }
+
     public Facture(Client client, long timestampCreation, String dateEcheance, String notes) {
-        this(client, new HashMap<>(), timestampCreation, dateEcheance, notes);
+        this.client = client;
+        this.produits = new ArrayList<>();
+        this.timestampCreation = timestampCreation;
+        this.dateEcheance = dateEcheance;
+        this.notes = notes;
+        produits.add(new MonPair<>(new Produit("", 0, ""), new Quantite(0)));
+        genererIdFacture();
+    }
+
+    public Facture(String idFacture, Client client, long timestampCreation, String dateEcheance, String notes) {
+        this.idFacture = idFacture;
+        this.client = client;
+        this.produits = new ArrayList<>();
+        this.timestampCreation = timestampCreation;
+        this.dateEcheance = dateEcheance;
+        this.notes = notes;
+        produits.add(new MonPair<>(new Produit("", 0, ""), new Quantite(0)));
+    }
+
+    private void genererIdFacture() {
+        for (int i = 0; i < 16; i++) {
+            idFacture += Math.floor(Math.random() * 9);
+        }
     }
 
     public Client getClient() {
@@ -34,11 +70,11 @@ public class Facture {
         this.client = client;
     }
 
-    public Map<Produit, Integer> getProduits() {
+    public List<MonPair<Produit, Quantite>> getProduits() {
         return produits;
     }
 
-    public void setProduits(Map<Produit, Integer> produits) {
+    public void setProduits(List<MonPair<Produit, Quantite>> produits) {
         this.produits = produits;
     }
 
@@ -66,8 +102,8 @@ public class Facture {
         this.notes = notes;
     }
 
-    public void ajouterProduit(Produit produit, int quantite) {
-        this.produits.put(produit, quantite);
+    public void ajouterProduit(Produit produit, Quantite quantite) {
+        this.produits.add(new MonPair<>(produit, quantite));
     }
 
     public void retirerProduit(Produit produit) {
@@ -76,9 +112,17 @@ public class Facture {
 
     public float getTotal() {
         float total = 0f;
-        for (Map.Entry<Produit, Integer> entry: produits.entrySet()) {
-            total += entry.getKey().getPrixUnitaire() * entry.getValue();
+        for (MonPair<Produit, Quantite> pair : produits) {
+            total += pair.getFirst().getPrixUnitaire() * pair.getSecond().getQuantite();
         }
         return total;
+    }
+
+    public void setIdFacture(String idFacture) {
+        this.idFacture = idFacture;
+    }
+
+    public String getIdFacture() {
+        return idFacture;
     }
 }

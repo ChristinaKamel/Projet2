@@ -4,16 +4,15 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.app.facturation.R;
+import com.app.facturation.adapters.FacturesAdapter;
 import com.app.facturation.databinding.FragmentFacturesBinding;
 import com.app.facturation.viewModels.FacturesViewModel;
 
@@ -28,6 +27,7 @@ public class FacturesFragment extends Fragment implements View.OnClickListener {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         initViewModel();
         binding = FragmentFacturesBinding.inflate(inflater, container, false);
+        initRecyclerView();
         addClickListeners();
         return binding.getRoot();
     }
@@ -38,6 +38,13 @@ public class FacturesFragment extends Fragment implements View.OnClickListener {
 
     private void addClickListeners() {
         binding.buttonAdd.setOnClickListener(this);
+    }
+
+    private void initRecyclerView() {
+        FacturesAdapter adapter = new FacturesAdapter();
+        facturesViewModel.getFactures().observe(getViewLifecycleOwner(), factures -> adapter.setFactures(factures));
+        binding.recyclerViewFactures.setAdapter(adapter);
+        binding.recyclerViewFactures.setLayoutManager(new LinearLayoutManager(getContext()));
     }
 
     @Override

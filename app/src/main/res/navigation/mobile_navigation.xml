@@ -38,7 +38,14 @@
         android:id="@+id/ajouterFactureFragment"
         android:name="com.app.facturation.ui.AjouterFactureFragment"
         android:label="@string/titre_ajouter_facture"
-        tools:layout="@layout/fragment_ajouter_facture" />
+        tools:layout="@layout/fragment_ajouter_facture">
+        <action
+            android:id="@+id/action_ajouterFactureFragment_to_choisirClientFragment"
+            app:destination="@id/choisirClientFragment" />
+        <action
+            android:id="@+id/action_ajouterFactureFragment_to_choisirProduitFragment"
+            app:destination="@id/choisirProduitFragment" />
+    </fragment>
     <fragment
         android:id="@+id/ajouterClientFragment"
         android:name="com.app.facturation.ui.AjouterClientFragment"
@@ -49,4 +56,22 @@
         android:name="com.app.facturation.ui.AjouterProduitFragment"
         android:label="@string/titre_ajouter_produit"
         tools:layout="@layout/fragment_ajouter_produit" />
+    <fragment
+        android:id="@+id/choisirClientFragment"
+        android:name="com.app.facturation.ui.ChoisirClientFragment"
+        android:label="Choisir client"
+        tools:layout="@layout/fragment_choisir_client">
+        <action
+            android:id="@+id/action_choisirClientFragment_to_ajouterClientFragment"
+            app:destination="@id/ajouterClientFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/choisirProduitFragment"
+        android:name="com.app.facturation.ui.ChoisirProduitFragment"
+        android:label="Choisir produit"
+        tools:layout="@layout/fragment_choisir_produit">
+        <action
+            android:id="@+id/action_choisirProduitFragment_to_ajouterProduitFragment"
+            app:destination="@id/ajouterProduitFragment" />
+    </fragment>
 </navigation>
