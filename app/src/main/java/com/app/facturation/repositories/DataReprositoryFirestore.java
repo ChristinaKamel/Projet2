@@ -1,14 +1,23 @@
 package com.app.facturation.repositories;
 
+import android.util.Log;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 
+import com.app.facturation.R;
 import com.app.facturation.model.Client;
 import com.app.facturation.model.Facture;
 import com.app.facturation.model.Produit;
 import com.app.facturation.liveData.ClientsLiveData;
 import com.app.facturation.liveData.FacturesLiveData;
 import com.app.facturation.liveData.ProduitsLiveData;
+import com.app.facturation.ui.MainActivity;
 import com.app.facturation.utils.FirebaseUtils;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.util.List;
 
@@ -26,11 +35,23 @@ public class DataReprositoryFirestore implements IDataRepository {
     private final ProduitsLiveData produitsLiveData;
     private final FacturesLiveData facturesLiveData;
 
+    private String fcmToken;
+
     @Inject
     public DataReprositoryFirestore() {
         clientsLiveData = new ClientsLiveData();
         produitsLiveData = new ProduitsLiveData();
         facturesLiveData = new FacturesLiveData();
+        FirebaseMessaging.getInstance().getToken()
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        setFcmToken(task.getResult());
+                    }
+                });
+    }
+
+    private void setFcmToken (String fcmToken) {
+        this.fcmToken = fcmToken;
     }
 
     @Override
@@ -66,9 +87,11 @@ public class DataReprositoryFirestore implements IDataRepository {
 
     @Override
     public void ajouterFacture(Facture facture) {
+        facture.setFcmToken(this.fcmToken);
         FirebaseUtils
                 .getInstanceFirestore()
                 .collection(COLLECTION_FACTURES)
-                .add(facture);
+                .document(facture.getIdFacture())
+                .set(facture);
     }
 }

@@ -14,6 +14,9 @@ public class Facture {
     private long timestampCreation;
     private String dateEcheance;
     private String notes;
+    private boolean estVue;
+    private boolean utilisateurEstNotifie;
+    private String fcmToken;
 
     public Facture() {
     }
@@ -25,6 +28,8 @@ public class Facture {
         this.timestampCreation = timestampCreation;
         this.dateEcheance = dateEcheance;
         this.notes = notes;
+        estVue = false;
+        utilisateurEstNotifie = false;
     }
 
     public Facture(Client client, List<MonPair<Produit, Quantite>> produits, long timestampCreation, String dateEcheance, String notes) {
@@ -34,6 +39,8 @@ public class Facture {
         this.dateEcheance = dateEcheance;
         this.notes = notes;
         genererIdFacture();
+        estVue = false;
+        utilisateurEstNotifie = false;
     }
 
     public Facture(Client client, long timestampCreation, String dateEcheance, String notes) {
@@ -44,6 +51,8 @@ public class Facture {
         this.notes = notes;
         produits.add(new MonPair<>(new Produit("", 0, ""), new Quantite(0)));
         genererIdFacture();
+        estVue = false;
+        utilisateurEstNotifie = false;
     }
 
     public Facture(String idFacture, Client client, long timestampCreation, String dateEcheance, String notes) {
@@ -54,12 +63,16 @@ public class Facture {
         this.dateEcheance = dateEcheance;
         this.notes = notes;
         produits.add(new MonPair<>(new Produit("", 0, ""), new Quantite(0)));
+        estVue = false;
+        utilisateurEstNotifie = false;
     }
 
     private void genererIdFacture() {
+        StringBuilder builder = new StringBuilder("");
         for (int i = 0; i < 16; i++) {
-            idFacture += Math.floor(Math.random() * 9);
+            builder.append((int)Math.floor(Math.random() * 9));
         }
+        idFacture = builder.toString();
     }
 
     public Client getClient() {
@@ -124,5 +137,29 @@ public class Facture {
 
     public String getIdFacture() {
         return idFacture;
+    }
+
+    public boolean isEstVue() {
+        return estVue;
+    }
+
+    public boolean isUtilisateurEstNotifie() {
+        return utilisateurEstNotifie;
+    }
+
+    public void setEstVue(boolean estVue) {
+        this.estVue = estVue;
+    }
+
+    public void setUtilisateurEstNotifie(boolean utilisateurEstNotifie) {
+        this.utilisateurEstNotifie = utilisateurEstNotifie;
+    }
+
+    public String getFcmToken() {
+        return fcmToken;
+    }
+
+    public void setFcmToken(String fcmToken) {
+        this.fcmToken = fcmToken;
     }
 }

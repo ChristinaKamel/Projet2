@@ -1,0 +1,13 @@
+[debug] [2021-10-26T02:39:49.402Z] ----------------------------------------------------------------------
+[debug] [2021-10-26T02:39:49.407Z] Command:       D:\Program Files HD\nodejs\node.exe C:\Users\chris\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2021-10-26T02:39:49.408Z] CLI Version:   9.20.0
+[debug] [2021-10-26T02:39:49.408Z] Platform:      win32
+[debug] [2021-10-26T02:39:49.408Z] Node Version:  v14.15.5
+[debug] [2021-10-26T02:39:49.410Z] Time:          Tue Oct 26 2021 05:39:49 GMT+0300 (Eastern European Summer Time)
+[debug] [2021-10-26T02:39:49.410Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-26T02:39:49.513Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-26T02:39:49.514Z] > authorizing via signed-in user (christinakamel1@gmail.com)
+[debug] [2021-10-26T02:39:49.514Z] [iam] checking project appfacturation-ef26c for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2021-10-26T02:39:49.517Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/appfacturation-ef26c:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
