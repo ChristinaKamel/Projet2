@@ -16,8 +16,20 @@ Envoyer cette facture au client sous forme de lien.
 
 Une notification lorsqu’une facture est lue par un client.
 
+### Diagrame de flux
+
 
 ## L'architecture
+L'architecture de cette application suit les meilleures pratiques de Google en utilisant les "Android Architecture Components"
+
+<img src="https://user-images.githubusercontent.com/37004573/138803969-3393f98a-edf5-4db2-8947-3804e861a86f.png" width="600">
+
+
+
+
+### Diagrame de classe
+
+
 
 ## Le code 
 Les fichiers JAVA: Projet2/app/src/main/java/com/app/facturation/
@@ -25,4 +37,7 @@ Les fichiers JAVA: Projet2/app/src/main/java/com/app/facturation/
 Les fichiers XML: Projet2/tree/main/app/src/main/res/layout/
 
 Les fichiers Firebase Functions: Projet2/tree/main/functions/
+
+### Installation
+Cette application est executee avec la derniere version [Android Studio](https://developer.android.com/studio?gclid=CjwKCAjwq9mLBhB2EiwAuYdMtdGPinbU7VPaguc4O06QQ0ppNTGzOD-LK0lcbTFO9f4HhV_MvfmVqRoCKvoQAvD_BwE&gclsrc=aw.ds)
 
