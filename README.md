@@ -1,4 +1,4 @@
-# Projet C2: Une application Android de Facturatiom
+# Projet C2: Une application Android de Facturation
 ## Brief des besoins
 Plusieurs petites entreprises ou “small business" ont besoin d’envoyer des factures à leurs clients. Un nombre important de ces entreprises ne possèdent pas un ordinateur et comptent faire toutes leurs opérations y compris la facturation depuis leur smartphone. On propose de faire une application Android pour ce besoin. 
 
@@ -16,7 +16,7 @@ Envoyer cette facture au client sous forme de lien.
 
 Une notification lorsqu’une facture est lue par un client.
 
-### Diagrame de flux
+![Untitled Document (10)](https://user-images.githubusercontent.com/37004573/138809928-4ebbeabd-1abb-4821-b7db-801c816dc386.png)
 
 
 ## L'architecture
